@@ -1,0 +1,29 @@
+@import "breakpoint";
+@import "singularitygs";
+@import 'partials/global/sprites';
+@import 'partials/global/variables';
+@import 'partials/global/mixins';
+
+.site-name {
+  position: relative;
+  @include breakpoint($phone) {
+    margin: 0.5em 0;
+  }
+  @include breakpoint($tablet) {
+    margin: 1em 0;
+  }
+  a {
+     
+     @include hide-text;
+     @include breakpoint($phone) {
+          @include get-sprite($icons, mobile-logo);
+          margin: 0 auto;
+          text-align: center;
+       }
+      @include breakpoint($tablet) {
+         @include get-sprite($icons, logo);
+         margin: 0 auto;
+         text-align: center;
+      }
+   }
+}

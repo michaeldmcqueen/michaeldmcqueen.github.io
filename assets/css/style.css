@@ -1,0 +1,662 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/\.rvm\/gems\/ruby-1\.9\.3-p194\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000317}}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/\.rvm\/gems\/ruby-1\.9\.3-p194\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000322}}
+html {
+  line-height: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/\.rvm\/gems\/ruby-1\.9\.3-p194\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000324}}
+ol, ul {
+  list-style: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/\.rvm\/gems\/ruby-1\.9\.3-p194\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000326}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/\.rvm\/gems\/ruby-1\.9\.3-p194\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000328}}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/\.rvm\/gems\/ruby-1\.9\.3-p194\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000330}}
+q, blockquote {
+  quotes: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/\.rvm\/gems\/ruby-1\.9\.3-p194\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003103}}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/\.rvm\/gems\/ruby-1\.9\.3-p194\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000332}}
+a img {
+  border: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/\.rvm\/gems\/ruby-1\.9\.3-p194\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003116}}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* -- BREAKPOINTS -- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/global\/_extendables\.scss}line{font-family:\0000314}}
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: "";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/global\/_extendables\.scss}line{font-family:\0000319}}
+.clearfix:after {
+  clear: both;
+}
+
+/* -- BREAKPOINTS -- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_content\.scss}line{font-family:\000036}}
+body {
+  background: #fff;
+  margin: 0 auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/\.rvm\/gems\/ruby-1\.9\.3-p194\/gems\/singularitygs-1\.1\.2\/stylesheets\/singularitygs\/helpers\/_clearfix\.scss}line{font-family:\0000365}}
+body:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_content\.scss}line{font-family:\0000316}}
+nav {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_content\.scss}line{font-family:\0000316}}
+  nav {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 980px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_content\.scss}line{font-family:\0000316}}
+  nav {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_content\.scss}line{font-family:\0000327}}
+.page-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_content\.scss}line{font-family:\0000331}}
+.wrap {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /*@include background-grid;*/
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/\.rvm\/gems\/ruby-1\.9\.3-p194\/gems\/singularitygs-1\.1\.2\/stylesheets\/singularitygs\/helpers\/_clearfix\.scss}line{font-family:\0000365}}
+.wrap:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_content\.scss}line{font-family:\0000331}}
+  .wrap {
+    max-width: 768px;
+    padding: 0 20px;
+  }
+}
+@media (min-width: 980px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_content\.scss}line{font-family:\0000331}}
+  .wrap {
+    max-width: 980px;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_content\.scss}line{font-family:\0000350}}
+#main {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+  padding: 40px 0;
+  clear: both;
+}
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_content\.scss}line{font-family:\0000350}}
+  #main {
+    width: 70.33898%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 980px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_content\.scss}line{font-family:\0000350}}
+  #main {
+    width: 70.33898%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_content\.scss}line{font-family:\0000363}}
+.front #main {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+  padding: 40px 0;
+  clear: both;
+}
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_content\.scss}line{font-family:\0000363}}
+  .front #main {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 980px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_content\.scss}line{font-family:\0000363}}
+  .front #main {
+    width: 57.62712%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_content\.scss}line{font-family:\0000376}}
+#sidebar {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+  padding: 20px 0;
+  clear: both;
+  border-bottom: 1px dotted #ddd;
+}
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_content\.scss}line{font-family:\0000376}}
+  #sidebar {
+    width: 23.72881%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+    clear: both;
+    padding: 40px 0;
+    border-bottom: 0;
+    position: relative;
+  }
+}
+@media (min-width: 980px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_content\.scss}line{font-family:\0000376}}
+  #sidebar {
+    width: 23.72881%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+    padding: 40px 0;
+    border-bottom: 0;
+    position: relative;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_content\.scss}line{font-family:\0000396}}
+.front #sidebar {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_content\.scss}line{font-family:\0000396}}
+  .front #sidebar {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 980px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_content\.scss}line{font-family:\0000396}}
+  .front #sidebar {
+    width: 40.67797%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+    padding: 40px 25px;
+  }
+}
+
+@media all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation: landscape) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_content\.scss}line{font-family:\00003107}}
+  .not-front .sidebar-bg {
+    background: #fafafa;
+    width: 500%;
+    left: -400%;
+    position: absolute;
+    top: 0;
+    height: 6600%;
+    z-index: -9;
+    overflow: hidden;
+  }
+}
+
+@media all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation: landscape) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_content\.scss}line{font-family:\00003120}}
+  .front .sidebar-bg {
+    background: #fafafa;
+    width: 600%;
+    right: -500%;
+    position: absolute;
+    top: 0;
+    height: 6600%;
+    z-index: -9;
+    overflow: hidden;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_content\.scss}line{font-family:\00003135}}
+.two-col-layout .half-width {
+  border: 1px solid #ddd;
+  border-bottom: 4px solid #f5e08d;
+  padding: 10px 20px;
+}
+@media all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation: landscape) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_content\.scss}line{font-family:\00003135}}
+  .two-col-layout .half-width {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_content\.scss}line{font-family:\00003143}}
+  .two-col-layout .half-width.views-row-odd {
+    margin-right: 3%;
+  }
+}
+
+/* -- BREAKPOINTS -- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_header\.scss}line{font-family:\000037}}
+.site-name {
+  position: relative;
+}
+@media (min-width: 0) and (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_header\.scss}line{font-family:\000037}}
+  .site-name {
+    margin: 0.5em 0;
+  }
+}
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_header\.scss}line{font-family:\000037}}
+  .site-name {
+    margin: 1em 0;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_header\.scss}line{font-family:\0000315}}
+.site-name a {
+  text-indent: 150%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+@media (min-width: 0) and (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_header\.scss}line{font-family:\0000315}}
+  .site-name a {
+    background: url('../images/icons.png') 0 -31px no-repeat;
+    height: 31px;
+    width: 95px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_header\.scss}line{font-family:\0000315}}
+  .site-name a {
+    background: url('../images/icons.png') 0 0 no-repeat;
+    height: 31px;
+    width: 408px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/\.rvm\/gems\/ruby-1\.9\.3-p194\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000317}}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/\.rvm\/gems\/ruby-1\.9\.3-p194\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000322}}
+html {
+  line-height: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/\.rvm\/gems\/ruby-1\.9\.3-p194\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000324}}
+ol, ul {
+  list-style: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/\.rvm\/gems\/ruby-1\.9\.3-p194\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000326}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/\.rvm\/gems\/ruby-1\.9\.3-p194\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000328}}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/\.rvm\/gems\/ruby-1\.9\.3-p194\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000330}}
+q, blockquote {
+  quotes: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/\.rvm\/gems\/ruby-1\.9\.3-p194\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003103}}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/\.rvm\/gems\/ruby-1\.9\.3-p194\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000332}}
+a img {
+  border: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/\.rvm\/gems\/ruby-1\.9\.3-p194\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003116}}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/*
+ * Variables
+ */
+/*
+ * Base styles
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\0000333}}
+body {
+  color: #333333;
+  font-size: 18px;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 300;
+  padding: 30px;
+  line-height: 1.6;
+}
+
+/*
+ * Typography
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\0000347}}
+.link, a {
+  color: #ce2829;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\0000351}}
+.link:visited, a:visited {
+  color: #ce2829;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\0000355}}
+.link:hover, a:hover, .link:visited:hover, a:visited:hover {
+  color: #ffcd05;
+  text-decoration: underline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\0000361}}
+.fixed, pre, code {
+  font-family: "Andale Mono", AndaleMono, monospace;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\0000363}}
+.quiet {
+  font-color: #cccccc;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\0000364}}
+.loud, .bold, b, strong {
+  font-color: black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\0000366}}
+.italic, i, em {
+  font-style: italic;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\0000367}}
+.bold, b, strong {
+  font-weight: 700;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\0000369}}
+.h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\0000370}}
+.h1, h1, .h2, h2 {
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\0000371}}
+.h3, h3, .h4, h4 {
+  line-height: 1.3;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\0000372}}
+.h1, h1 {
+  font-size: 300%;
+  letter-spacing: -2px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\0000373}}
+.h2, h2 {
+  font-size: 200%;
+  letter-spacing: -1px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\0000374}}
+.h3, h3 {
+  font-size: 180%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\0000375}}
+.h4, h4 {
+  font-size: 150%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\0000376}}
+.h5, h5 {
+  font-size: 130%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\0000377}}
+.h6, h6 {
+  font-size: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\0000379}}
+.block-margins, p, ul, ol, pre {
+  margin: 1em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\0000381}}
+.unordered-list, ul {
+  list-style-type: disc;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\0000382}}
+.ordered-list, ol {
+  list-style: decimal;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\0000389}}
+h1 {
+  margin: 1em 0 0.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\0000390}}
+h2 {
+  margin: 1em 0 0.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\0000391}}
+h3 {
+  margin: 1em 0 0.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\0000392}}
+h4 {
+  margin: 1em 0 0.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\0000393}}
+h5 {
+  margin: 1em 0 0.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\0000394}}
+h6 {
+  margin: 1em 0 0.5em;
+}
+
+/*
+ * Modifiers
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\00003109}}
+.float-left {
+  float: left;
+  margin-right: 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\00003110}}
+.float-right {
+  float: right;
+  margin-left: 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\00003112}}
+.text-left {
+  text-align: left   !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\00003113}}
+.text-center {
+  text-align: center !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\00003114}}
+.text-right {
+  text-align: right  !important;
+}
+
+/*
+ * Object definitions
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\00003121}}
+.content {
+  margin: 0 auto;
+  width: 32em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\00003126}}
+.header-block {
+  font-size: 110%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\00003129}}
+.header-block.typography h1 {
+  font-size: 450%;
+  margin-top: 0 !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\00003132}}
+.author-block {
+  border-top: 3px double #cccccc;
+  margin-top: 4em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/style-guide\/type\.scss}line{font-family:\00003136}}
+img, video {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}

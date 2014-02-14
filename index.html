@@ -1,11 +1,204 @@
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="assets/css/screen.css">
+ <meta charset="utf-8">
+  <title>Michael David McQueen</title>
+  <meta name="description" content="Michael David McQueen Portfolio Site">
+  <meta name="author" content="Michael David McQueen">
+<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:400,500,700,800,400italic,500italic,700italic,800italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:700' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>
+	/* lazyload.js (c) Lorenzo Giuliani
+	 * MIT License (http://www.opensource.org/licenses/mit-license.html)
+	 *
+	 * expects a list of:  
+	 * `<img src="blank.gif" data-src="my_image.png" width="600" height="400" class="lazy">`
+	 */
+	 $(function() {
+	  var $q = function(q, res){
+	        if (document.querySelectorAll) {
+	          res = document.querySelectorAll(q);
+	        } else {
+	          var d=document
+	            , a=d.styleSheets[0] || d.createStyleSheet();
+	          a.addRule(q,'f:b');
+	          for(var l=d.all,b=0,c=[],f=l.length;b<f;b++)
+	            l[b].currentStyle.f && c.push(l[b]);
+
+	          a.removeRule(0);
+	          res = c;
+	        }
+	        return res;
+	      }
+	    , addEventListener = function(evt, fn){
+	        window.addEventListener
+	          ? this.addEventListener(evt, fn, false)
+	          : (window.attachEvent)
+	            ? this.attachEvent('on' + evt, fn)
+	            : this['on' + evt] = fn;
+	      }
+	    , _has = function(obj, key) {
+	        return Object.prototype.hasOwnProperty.call(obj, key);
+	      }
+	    ;
+
+	  function loadImage (el, fn) {
+	    var img = new Image()
+	      , src = el.getAttribute('data-src');
+	    img.onload = function() {
+	      if (!! el.parent)
+	        el.parent.replaceChild(img, el)
+	      else
+	        el.src = src;
+
+	      fn? fn() : null;
+	    }
+	    img.src = src;
+	  }
+
+	  function elementInViewport(el) {
+	    var rect = el.getBoundingClientRect()
+
+	    return (
+	       rect.top    >= 0
+	    && rect.left   >= 0
+	    && rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+	    )
+	  }
+
+	    var images = new Array()
+	      , query = $q('img.lazy')
+	      , processScroll = function(){
+	          for (var i = 0; i < images.length; i++) {
+	            if (elementInViewport(images[i])) {
+	              loadImage(images[i], function () {
+	                images.splice(i, i);
+	              });
+	            }
+	          };
+	        }
+	      ;
+	    // Array.prototype.slice.call is not callable under our lovely IE8 
+	    for (var i = 0; i < query.length; i++) {
+	      images.push(query[i]);
+	    };
+
+	    processScroll();
+	    addEventListener('scroll',processScroll);
+
+	  });
+	</script>
+ <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+
 </head>
 
 <body>
-<header>My Header</header>
-<section>My Section</section>
-<footer>My Footer</footer>
+	<div class="page-wrap">
+		<header>
+			<div class="wrap">
+				<h1 class="site-name"><a href="index.html">Michael David McQueen</a></h1>
+			</div>
+		</header>
+
+		<section>
+			<div class="wrap">
+
+		  <img src="assets/images/blank.gif" class="lazy" data-src="https://dl.dropboxusercontent.com/u/57799018/gastro.jpg">
+
+		  <h2>Gastro Center of the Rockies</h2>
+		  <p>Many of the key features found in Sass are being adapted for submission to the W3C. <a href="http://www.xanthir.com/blog/b49w0">Variables, Mixins, and Nesting are all mooted for inclusion in CSS</a>, and we may see some of them appear in the near future.</p>
+
+		  <p>Then again, we may not; resistance to the proposals is quite strong from certain members - for example, <a href="http://www.w3.org/People/Bos/">Bert Bos</a> wrote a long article on <a href="http://www.w3.org/People/Bos/CSS-variables">why he considers CSS Variables to be harmful</a>. But I thought it would be interesting for the Sass community to see how the software to which you develop and contribute to (Sass) is being used to discuss the future of the web.</p>
+
+		  <h2>The Variables proposal</h2>
+		  <p>This proposal should look very familiar to you - it’s the same syntax that Sass uses, with one addition. Each variable is defined using a three-part syntax: first you set up the declaration using the <code>@var</code> at-rule, then you provide a unique name with the <code>$</code> character before it, then you set the value:</p>
+
+		  <pre>@var $foo #F00;</pre>
+
+		  <p>Once set up like this, you can reference your variable by using the unique name as a value:</p>
+
+		  <pre>h1 {
+		  color: $foo;
+		}</pre>
+
+		  <p><a href="http://www.xanthir.com/blog/b4AD0">This proposal has already been put forward to the W3C</a>, and I’ll tell you the result of that shortly.</p>
+
+		  <h2>The Mixins proposal</h2>
+		  <p>As with Variables, you should be very familiar with the Mixins proposal - the syntax used in Sass was the inspiration. You create a declaration block using the @mixin at-rule, assign a unique id, and then add your rules:</p>
+
+		  <pre>@mixin foo {
+		  color: #F00;
+		  font-weight: bold;
+		}</pre>
+
+		  <p>When you need to use that code block you call it using the @mix directive and the unique id you previously assigned:</p>
+
+		  <pre>h1 {
+		  font-size: 2em;
+		  @mix foo;
+		}</pre>
+
+		  <p>As you can see, the only difference is that the CSS proposal uses @mix in place of Sass’s @include. As with Sass, you can also use parameters with Mixins:</p>
+
+		<pre>@mixin foo($bar #F00) {
+		  border-color: $bar;
+		  color: $bar;
+		}
+
+		h1 {
+		  @mix foo(#00F);
+		}</pre>
+
+		  <h2>An alternative variables syntax</h2>
+
+		  <p>Recently, <a href="http://lists.w3.org/Archives/Public/www-style/2011Oct/0699.html">an alternative syntax for Variables has been proposed</a>. This syntax looks and acts somewhat similarly to the HTML data attribute, although it’s not the same. In this proposal variables are scoped to elements (for global scope, you’d use the :root selector) and the variable name is prefixed with data-:</p>
+
+		<pre>:root {
+		  data-foo: #F00;
+		}</pre>
+
+		  <p>Then you reference the variable by using the unique name in the data function:</p>
+<img src="assets/images/blank.gif" class="lazy" data-src="https://dl.dropboxusercontent.com/u/57799018/gastro.jpg">
+		<pre>h1 {
+		  color: data(foo);
+		}</pre>
+
+		  <p>This has the advantage of allowing scoped variables, and integrating better with the <a href="http://dev.w3.org/csswg/cssom/">CSSOM</a>, JavaScript, as well as inspector tools like <a href="http://getfirebug.com/">Firebug</a> or <a href="http://www.opera.com/dragonfly/">Dragonfly</a>.</p>
+
+		  <p>It must be stressed, however, that this is still only at the discussion stage.</p>
+
+		  <h2>So when will we see them?</h2>
+		  <p>As I said, maybe never. As I understand it, the first Variables proposal was not well received by the W3C - but the module author, <a href="https://twitter.com/#!/tabatkins">Tab Atkins</a>, is continuing to refine it anyway. Tab is also key to the creation of the alternative syntax. You can follow along with Tab and his writing at his personal blog where he shares his thoughts on web standards as well as details surrounding discussions on the future of CSS.</p>
+
+		  <p>As for Mixins, they were rejected out of hand and probably won’t be pursued. The reason given? Lack of use cases. But I can’t imagine that you, as Sass creators, developers and users are short of use cases for Mixins. So, if you have them I’d love to read them - please leave a comment below sharing your thoughts if that’s the case.</p>
+
+		  <p>If work does continue on these proposals, or any part of them, I think that it would be a matter of little time before browsers started to implement them; I believe, in fact, that <a href="http://www.webkit.org/">WebKit</a> already implemented Variables, only to remove them after feedback from the <a href="http://www.w3.org/">W3C</a>.</p>
+
+		  <h2>Conclusion</h2>
+		  <p>I have to confess that I’ve only briefly experimented with Sass, and have not used it in any production websites, but what I like about it is the ease with which it’s been possible to adapt the syntax into CSS itself. It’s great to see community-created language extensions influence the evolution of the web, and even if none of these proposals ever make it to the implementation stage, you can be sure that <b>at the very least</b> they form part of the standards conversation.</p>
+<img src="assets/images/blank.gif" class="lazy" data-src="https://dl.dropboxusercontent.com/u/57799018/gastro.jpg">
+		  <h2>Links</h2>
+		  <ol>
+		    <li><a href="http://www.xanthir.com/blog/b49w0" class="link external" target="_blank">CSSOM, Vars, Mixins, Nesting, and Modules</a></li>
+		    <li><a href="http://www.w3.org/People/Bos/CSS-variables" class="link external" target="_blank">Why “variables” in CSS are harmful</a></li>
+		    <li><a href="http://www.xanthir.com/blog/b4AD0" class="link external" target="_blank">CSS Variables Draft</a></li>
+		    <li><a href="http://lists.w3.org/Archives/Public/www-style/2011Oct/0699.html" class="link external" target="_blank">Better Variables through Custom Properties from Tab Atkins Jr. on 2011-10-24</a></li>
+		  </ol>
+<img src="assets/images/blank.gif" class="lazy" data-src="https://dl.dropboxusercontent.com/u/57799018/gastro.jpg">
+		</section>
+
+		<footer>
+			<div class="wrap">
+				<p>My Footer</p>
+			</div>
+		</footer>
+	</div>
 </body>
 </html>
+
+ 
