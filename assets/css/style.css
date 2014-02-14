@@ -376,6 +376,11 @@ nav {
   }
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/modules\/_project\.scss}line{font-family:\000031}}
+.project {
+  margin-bottom: 10em;
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/\.rvm\/gems\/ruby-1\.9\.3-p194\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000317}}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,

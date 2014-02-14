@@ -10,6 +10,9 @@
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>
+$(document).ready(function () {
+        $('img').hide().fadeIn(900);
+    });
 	/* lazyload.js (c) Lorenzo Giuliani
 	 * MIT License (http://www.opensource.org/licenses/mit-license.html)
 	 *
@@ -108,15 +111,17 @@
 		<section>
 			<div class="wrap">
 
-			  <img src="assets/images/blank.gif" class="lazy" data-src="https://dl.dropboxusercontent.com/u/57799018/gastro.jpg">
-			  <h2>Gastro Center of the Rockies</h2>
-			  <p>Many of the key features found in Sass are being adapted for submission to the W3C. <a href="http://www.xanthir.com/blog/b49w0">Variables, Mixins, and Nesting are all mooted for inclusion in CSS</a>, and we may see some of them appear in the near future.</p>
-			  
+			  <div class="project">
+				  <img src="assets/images/blank.gif" class="lazy" data-src="https://dl.dropboxusercontent.com/u/57799018/gastro.jpg">
+				  <h2>Gastro Center of the Rockies</h2>
+				  <p>Many of the key features found in Sass are being adapted for submission to the W3C. <a href="http://www.xanthir.com/blog/b49w0">Variables, Mixins, and Nesting are all mooted for inclusion in CSS</a>, and we may see some of them appear in the near future.</p>
+			  </div>
 
-			  <img src="assets/images/blank.gif" class="lazy" data-src="https://dl.dropboxusercontent.com/u/57799018/sixstar-logo.jpg">
-			  <h2>Six Star Cars</h2>
-			  <p>Many of the key features found in Sass are being adapted for submission to the W3C. <a href="http://www.xanthir.com/blog/b49w0">Variables, Mixins, and Nesting are all mooted for inclusion in CSS</a>, and we may see some of them appear in the near future.</p>
-
+			  <div class="project">
+				  <img src="assets/images/blank.gif" class="lazy" data-src="https://dl.dropboxusercontent.com/u/57799018/sixstar-logo.jpg">
+				  <h2>Six Star Cars</h2>
+				  <p>Many of the key features found in Sass are being adapted for submission to the W3C. <a href="http://www.xanthir.com/blog/b49w0">Variables, Mixins, and Nesting are all mooted for inclusion in CSS</a>, and we may see some of them appear in the near future.</p>
+			  </div>
 
 		</section>
 
