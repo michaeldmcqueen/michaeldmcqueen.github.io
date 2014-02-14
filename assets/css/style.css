@@ -345,7 +345,7 @@ nav {
 @media (min-width: 768px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_header\.scss}line{font-family:\000037}}
   .site-name {
-    margin: 1em 0;
+    margin: 1em 0 1.5em;
   }
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mikemcq\/Sites\/michaeldmcqueen\.com\/michaeldmcqueen\.github\.io\/assets\/sass\/partials\/layouts\/_header\.scss}line{font-family:\0000315}}
