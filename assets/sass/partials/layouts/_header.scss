@@ -8,9 +8,20 @@
   position: relative;
   @include breakpoint($phone) {
     margin: 0.5em 0;
+    position: absolute;
+    top: 47%;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
   }
   @include breakpoint($tablet) {
     margin: 1em 0 1.5em;
+    position: absolute;
+    top: 47%;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+
   }
   a {
      
@@ -23,7 +34,30 @@
       @include breakpoint($tablet) {
          @include get-sprite($icons, logo);
          margin: 0 auto;
-         text-align: center;
+         text-align: center;         
       }
    }
+}
+
+header.header {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    border: 15px solid #fff;
+}
+
+.color-block {
+  width: 100%;
+  height: 33.33333%;
+  position: absolute;
+  &.one {
+    top: 0;
+  }
+  &.two {
+    top: 33.33333%;
+  }
+  &.three {
+    top: 66.666666%;
+  }
+
 }

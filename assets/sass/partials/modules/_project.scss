@@ -1,3 +1,50 @@
+@import 'partials/global/variables';
+@import 'partials/global/mixins';
+@import "singularitygs";
+@import 'breakpoint';
+
 .project {
-	margin-bottom: 10em;
+    @include breakpoint($phone) {
+	   margin-bottom: 5em;
+    }
+    @include breakpoint($tablet) {
+	   margin-bottom: 15em;
+    }
+	img {
+	margin-bottom: 6em;
+	}
+}
+
+
+@include breakpoint($desktop) {
+	.laptop-wrap {
+	  width:980px;
+	  height: 607px;
+	  background: url('https://dl.dropboxusercontent.com/u/267855492/michaeldmcqueen.com/laptop-wrap-desktop.jpg') no-repeat;
+	  position: relative;
+		.window {
+			width: 732px;
+			height: 459px;
+			overflow:scroll;
+		    position: absolute;
+		    top: 44px;
+			left: 126px;
+			img {
+			  margin-bottom: 0;
+			}
+		}
+	}
+}
+@include breakpoint($lg-desktop) {
+	.laptop-wrap {
+	  width:1200px;
+	  height: 743px;
+	  background: url('https://dl.dropboxusercontent.com/u/267855492/michaeldmcqueen.com/laptop-wrap.jpg') no-repeat;
+		.window {
+			width: 895px;
+			height: 560px;
+		    top:54px;
+		    left:156px;
+		}
+	}
 }

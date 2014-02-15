@@ -3,31 +3,16 @@
 @import 'partials/global/mixins';
 @import 'partials/global/variables';
 
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
 body {
   background: #fff;
   margin: 0 auto;
   @include clearfix;
 }
 
-#header {
-  
-}
-
-nav {
-  @include grid-span (1, 1);
-  @include breakpoint($tablet) {
-    @include grid-span (12, 1);
-  }
-  @include breakpoint($desktop) {
-    @include grid-span (12, 1);
-  }
-}
-
-
-.page-wrap {
-	overflow: hidden;
-	position: relative;
-}
 .wrap {
   width: 100%;
   max-width: 320px;
@@ -45,104 +30,21 @@ nav {
   @include breakpoint($desktop) {
     max-width: $desktop;
   }
-}
-
-#main {
-  @include grid-span (1, 1);
-  padding: 40px 0;
-  clear: both;
-  @include breakpoint($tablet) {
-    @include grid-span (8.5, 4.5);
-  }
-  @include breakpoint($desktop) {
-    @include grid-span (8.5, 4.5);
+  @include breakpoint($lg-desktop) {
+    max-width: $lg-desktop;
   }
 }
 
-
-.front #main {
-  @include grid-span (1, 1);
-  padding: 40px 0;
-  clear: both;
-  @include breakpoint($tablet) {
-    @include grid-span (12, 1);
-  }
-  @include breakpoint($desktop) {
-    @include grid-span (7, 1);
-  }
+.main-section {
+  
+    width: 100%; 
+    position: absolute; 
+    top: 100%; 
+    padding: 10em 0;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 40px rgba(150, 150, 150, 0.8);
+    -moz-box-shadow: 0px 0px 40px rgba(150, 150, 150, 0.8);
+    box-shadow: 0px 0px 40px rgba(150, 150, 150, 0.8);
 }
 
 
-#sidebar {
-  @include grid-span (1, 1);
-  padding: 20px 0;
-  clear: both;
-  border-bottom: 1px dotted #ddd;
-  @include breakpoint($tablet) {
-    @include grid-span (3, 1);
-    clear: both;
-    padding: 40px 0;
-    border-bottom: 0;
-    position: relative;
-  }
-  @include breakpoint($desktop) {
-    @include grid-span (3, 1);
-    padding: 40px 0;
-    border-bottom: 0;
-    position: relative;
-  }
-}
-
-.front #sidebar {
-  @include grid-span (1, 1);
-  @include breakpoint($tablet) {
-    @include grid-span (12, 1);
-  }
-  @include breakpoint($desktop) {
-    @include grid-span (5, 8);
-    padding: 40px 25px;
-  }
-}
-
-.not-front .sidebar-bg {
-	@include breakpoints(tablet) {
-		background: #fafafa;
-		width: 500%;
-		left: -400%;
-		position: absolute;
-		top: 0;
-		height: 6600%;
-		z-index: -9;
-		overflow: hidden;
-	}
-}
-
-.front .sidebar-bg {
-	@include breakpoints(desktop) {
-		background: #fafafa;
-		width: 600%;
-		right: -500%;
-		position: absolute;
-		top: 0;
-		height: 6600%;
-		z-index: -9;
-		overflow: hidden;
-	}
-}
-
-
-.two-col-layout {
-	.half-width {
-	  border: 1px solid #ddd;
-	  border-bottom: 4px solid $color-one;
-	  padding: 10px 20px;
-		@include breakpoints(tablet) {
-		  display: inline-block;
-		  width: 48%;
-		  vertical-align: top;
-		  &.views-row-odd {
-			  margin-right: 3%;
-		  }
-		}
-	}
-}

@@ -9,10 +9,12 @@
 
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.js"></script>
 <script>
 $(document).ready(function () {
-        $('img').hide().fadeIn(900);
-    });
+        $('img').hide().fadeIn(900); 
+
+}); 
 	/* lazyload.js (c) Lorenzo Giuliani
 	 * MIT License (http://www.opensource.org/licenses/mit-license.html)
 	 *
@@ -93,6 +95,8 @@ $(document).ready(function () {
 
 	  });
 	</script>
+
+
  <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -102,26 +106,36 @@ $(document).ready(function () {
 
 <body>
 	<div class="page-wrap">
-		<header>
+		<header class="header">
+		
 			<div class="wrap">
 				<h1 class="site-name"><a href="index.html">Michael David McQueen</a></h1>
 			</div>
 		</header>
 
-		<section>
+		<section class="main-section">
 			<div class="wrap">
 
-			  <div class="project">
+			  <!--<div class="project">
 				  <img src="assets/images/blank.gif" class="lazy" data-src="https://dl.dropboxusercontent.com/u/57799018/paleo.jpg">
-				  <!--<h2>PaleoFx</h2>
+				  <h2>PaleoFx</h2>
 				  <p>Many of the key features found in Sass are being adapted for submission to the W3C. <a href="http://www.xanthir.com/blog/b49w0">Variables, Mixins, and Nesting are all mooted for inclusion in CSS</a>, and we may see some of them appear in the near future.</p>
-				  <p class='note'>Work was done with <a href='http://www.variantstudios.com' target="_blank">Variant Studios</a></p>-->
-			  </div>
+				  <p class='note'>Work was done with <a href='http://www.variantstudios.com' target="_blank">Variant Studios</a></p>
+			  </div>-->
 
 			  <div class="project">
-				  <img src="assets/images/blank.gif" class="lazy" data-src="https://dl.dropboxusercontent.com/u/57799018/sixstar-logo.jpg">
-				  <!--<h2>Six Star Cars</h2>
-				  <p>Many of the key features found in Sass are being adapted for submission to the W3C. <a href="http://www.xanthir.com/blog/b49w0">Variables, Mixins, and Nesting are all mooted for inclusion in CSS</a>, and we may see some of them appear in the near future.</p>-->
+
+			  	
+				  <img src="assets/images/blank.gif" class="lazy" data-src="https://dl.dropboxusercontent.com/u/267855492/michaeldmcqueen.com/sixstar-branding.jpg">
+				
+				  <div class="laptop-wrap">
+				  	 <div class="window">
+						 <img src="assets/images/blank.gif" class="lazy" data-src="https://dl.dropboxusercontent.com/u/267855492/michaeldmcqueen.com/sixstar-home.jpg">
+					</div>
+				  </div>
+				 
+				  <h2>Six Star Cars</h2>
+				  <p>Many of the key features found in Sass are being adapted for submission to the W3C. <a href="http://www.xanthir.com/blog/b49w0">Variables, Mixins, and Nesting are all mooted for inclusion in CSS</a>, and we may see some of them appear in the near future.</p>
 			  </div>
 
 		</section>
