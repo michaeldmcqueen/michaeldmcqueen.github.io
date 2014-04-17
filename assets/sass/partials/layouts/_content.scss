@@ -16,8 +16,10 @@ body {
 
 .page-wrap {
   @include grid-span (1, 1);
-  max-width: 1400px;
   float: left;
+  @include breakpoint($desktop) {
+      max-width: 1400px;
+  }
 }
 
 .wrap {
