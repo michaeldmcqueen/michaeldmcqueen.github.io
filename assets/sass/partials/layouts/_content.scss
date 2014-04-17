@@ -1,7 +1,8 @@
-@import "breakpoint";
-@import "singularitygs";
 @import 'partials/global/mixins';
 @import 'partials/global/variables';
+@import "breakpoint";
+@import "singularitygs";
+
 
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
@@ -13,9 +14,15 @@ body {
   @include clearfix;
 }
 
+.page-wrap {
+  @include grid-span (1, 1);
+  max-width: 1400px;
+  float: left;
+}
+
 .wrap {
   width: 100%;
-  max-width: 320px;
+  max-width: $phone;
   margin: 0 auto;
   padding: 0 20px;
   -webkit-box-sizing: border-box;
@@ -25,26 +32,96 @@ body {
   /*@include background-grid;*/
   @include breakpoint($tablet) {
     max-width: $tablet;
-    padding: 0 20px;
+    padding: 0 2em;
   }
   @include breakpoint($desktop) {
-    max-width: $desktop;
+    max-width: 800px;
+    padding: 0 3em;
   }
   @include breakpoint($lg-desktop) {
-    max-width: $lg-desktop;
+    max-width: 800px;
+    padding: 0 0em;
   }
 }
 
-.main-section {
-  
-    width: 100%; 
-    position: absolute; 
-    top: 100%; 
-    padding: 10em 0;
+
+header.header {
+  background: #fafafa;
+
+  @include breakpoint($tablet) {
+      @include grid-span (2, 1);
+      height: 100vh;
+      width: 300px;
+      position: fixed;
+  }
+  @include breakpoint($desktop) {
+      @include grid-span (2, 1);
+      width: 300px;
+  }
+}
+
+.main-section, .archive {
+  @include breakpoint($tablet) {
+      float: right;
+      width: calc(100% - 300px);
+      width: -webkit-calc(100% - 300px);
+      width: calc(100% - 300px);
+
+  }
+}
+
+.main-section {    padding: 0;
     background: #fff;
-    -webkit-box-shadow: 0px 0px 40px rgba(150, 150, 150, 0.8);
-    -moz-box-shadow: 0px 0px 40px rgba(150, 150, 150, 0.8);
-    box-shadow: 0px 0px 40px rgba(150, 150, 150, 0.8);
+}
+
+article {
+  @include clearfix;
+}
+.cover {
+  @include breakpoint($desktop) {
+   float: left;
+   width: 30%;
+   }
+   img {
+    margin-bottom: 0.5em;
+   }
+}
+
+.desc {
+  @include breakpoint($desktop) {
+   overflow: hidden;
+   }
+   @include breakpoint($desktop) {
+   p {
+    margin: 0 0 1em;
+    padding-left: 1em;
+    font-size: 140%;
+   }
+  }
 }
 
 
+.archive {
+  h2 {
+    border-top: 2px solid #333;
+    padding-top: 1em;
+  }
+}
+
+.archive-project {
+    border-top: 1px solid #ccc;
+    padding: 1em;
+    h6 {
+      margin: 1em 0;
+      @include breakpoint($tablet) {      
+         display: inline-block;
+      }
+    }
+    .read-more-btn {
+      font-size: 80%;
+      @include breakpoint($tablet) {    
+        float: right;
+        margin: 1em 0;
+      }
+    }
+}

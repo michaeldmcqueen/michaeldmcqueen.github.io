@@ -1,0 +1,175 @@
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+  <title>Michael David McQueen</title>
+  <meta name="description" content="Michael David McQueen Portfolio Site">
+  <meta name="author" content="Michael David McQueen">
+
+<link href='http://fonts.googleapis.com/css?family=EB+Garamond|Montserrat:700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.js"></script>
+<script>
+$(document).ready(function () {
+        $('img').hide().fadeIn(900); 
+
+}); 
+	/* lazyload.js (c) Lorenzo Giuliani
+	 * MIT License (http://www.opensource.org/licenses/mit-license.html)
+	 *
+	 * expects a list of:  
+	 * `<img src="blank.gif" data-src="my_image.png" width="600" height="400" class="lazy">`
+	 */
+	 $(function() {
+	  var $q = function(q, res){
+	        if (document.querySelectorAll) {
+	          res = document.querySelectorAll(q);
+	        } else {
+	          var d=document
+	            , a=d.styleSheets[0] || d.createStyleSheet();
+	          a.addRule(q,'f:b');
+	          for(var l=d.all,b=0,c=[],f=l.length;b<f;b++)
+	            l[b].currentStyle.f && c.push(l[b]);
+
+	          a.removeRule(0);
+	          res = c;
+	        }
+	        return res;
+	      }
+	    , addEventListener = function(evt, fn){
+	        window.addEventListener
+	          ? this.addEventListener(evt, fn, false)
+	          : (window.attachEvent)
+	            ? this.attachEvent('on' + evt, fn)
+	            : this['on' + evt] = fn;
+	      }
+	    , _has = function(obj, key) {
+	        return Object.prototype.hasOwnProperty.call(obj, key);
+	      }
+	    ;
+
+	  function loadImage (el, fn) {
+	    var img = new Image()
+	      , src = el.getAttribute('data-src');
+	    img.onload = function() {
+	      if (!! el.parent)
+	        el.parent.replaceChild(img, el)
+	      else
+	        el.src = src;
+
+	      fn? fn() : null;
+	    }
+	    img.src = src;
+	  }
+
+	  function elementInViewport(el) {
+	    var rect = el.getBoundingClientRect()
+
+	    return (
+	       rect.top    >= 0
+	    && rect.left   >= 0
+	    && rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+	    )
+	  }
+
+	    var images = new Array()
+	      , query = $q('img.lazy')
+	      , processScroll = function(){
+	          for (var i = 0; i < images.length; i++) {
+	            if (elementInViewport(images[i])) {
+	              loadImage(images[i], function () {
+	                images.splice(i, i);
+	              });
+	            }
+	          };
+	        }
+	      ;
+	    // Array.prototype.slice.call is not callable under our lovely IE8 
+	    for (var i = 0; i < query.length; i++) {
+	      images.push(query[i]);
+	    };
+
+	    processScroll();
+	    addEventListener('scroll',processScroll);
+
+	  });
+	</script>
+
+
+ <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+
+</head>
+
+<body>
+	<div class="page-wrap">
+		<header class="header">
+		<div class="color-block"></div>
+			<h1 class="site-name"><a href="index.html">Michael David McQueen</a></h1>
+		</header>
+
+		<section class="main-section">
+			  	<div class="wrap">
+			  	 <h2>Hello.</h2>
+			  	 <p>I am Michael David McQueen. I am a designer currently working and living in Fort Collins, Colorado. I work as a designer and site builder for <a href="http://www.variantstudios.com" target="_blank">Variant Studios</a> a small design centric <a href="http://www.drupal.org" target="_blank">Drupal</a> shop. I am from Dunfermline, Scotland.</p> 
+			  	 <p>I enjoy:</p>
+			  	 	<ul>
+					 <li>Craft Beer</li>
+					 <li>Tea</li>
+					 <li>Potatoes(in all forms, I love you all)</li>
+					 <li>Music (see here)</li>
+					 <li>Design</li>
+			  	 	</ul>
+			  	 </p>
+				 <h4>Books</h4>
+				 <h6>Greatest Hits</h6>
+				 <p>The following is a collection of books I recommed, some are design realted some not, all are fucking great.</p>
+				 
+				 <article>
+					 <div class="cover">
+					 	<img src="http://farm3.staticflickr.com/2476/3941250516_42636136ee.jpg" />
+						 <blockquote>"If what we use every day is made with art, and not thrown together by chance or caprice, then we shall have nothing to hide" <br><em>- Bruno Munari</em></blockquote>
+					 </div>
+					 <div class="desc">
+					 	<p>Bruno Munari was a Itailan designer, artist, inventor and general badass. His 1966 book <a href="http://www.amazon.com/Design-As-Art-Bruno-Munari/dp/0141035811" target="_blank">Design as Art</a> is to me as relevent to today as it was the the day it was published, and a must read for designs folks. Munari talks of design as something that must be beautiful, functional and accessible something we strive to accomplish. This book almost reads as a blog, with ideas spanning aross various subjects and topics, musings on the design world. Orignally pulished as newpaper articles Design as Art gives insight to Munaris thoughts on the design world and how we can all achive it.</p>
+					 </div>
+				 </article>
+
+				 <article>
+					<div class="cover">
+						<img src="http://www.czyk-design.com/images/HHGG_1.jpg" />
+						<blockquote>“For a moment, nothing happened. Then, after a second or so, nothing continued to happen.”<br><em>- Douglas Adams</em></blockquote>
+					</div>
+					 <div class="desc">
+					 	<p>Bruno Munari was a Itailan designer, artist, inventor and general badass. His 1966 book.</p>
+					 </div>
+				 </article>
+
+				 <h6>Currently Reading</h6>
+				 <p>Songs in the Key of Fife by Vic Galloway</p>
+
+				 <h4>Music</h4>
+				 <h6>Greatest Hits</h6>
+				 <p>The following is a collection of books I recommed, some are design realted some not, all are fucking great.</p>
+				 <div class="cover"><img src="http://www.ldm.com.sg/Pictures/cover_frightenedRabbit.jpg" /></div>
+				 
+				 <div class="desc">
+				 	<p><a href="http://frightenedrabbit.com/" target="_blank">Frightened Rabbits</a> second album Midnight Organ Fight.</p>
+				 </div>
+
+			  </div>
+
+		</section>
+
+
+		<footer>
+			<div class="wrap">
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
+
+ 

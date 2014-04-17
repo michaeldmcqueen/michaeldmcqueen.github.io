@@ -4,98 +4,22 @@
   <title>Michael David McQueen</title>
   <meta name="description" content="Michael David McQueen Portfolio Site">
   <meta name="author" content="Michael David McQueen">
-<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:400,500,700,800,400italic,500italic,700italic,800italic' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Raleway:700' rel='stylesheet' type='text/css'>
 
+<link href='http://fonts.googleapis.com/css?family=EB+Garamond|Montserrat:700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.js"></script>
-<script>
-$(document).ready(function () {
-        $('img').hide().fadeIn(900); 
 
-}); 
-	/* lazyload.js (c) Lorenzo Giuliani
-	 * MIT License (http://www.opensource.org/licenses/mit-license.html)
-	 *
-	 * expects a list of:  
-	 * `<img src="blank.gif" data-src="my_image.png" width="600" height="400" class="lazy">`
-	 */
-	 $(function() {
-	  var $q = function(q, res){
-	        if (document.querySelectorAll) {
-	          res = document.querySelectorAll(q);
-	        } else {
-	          var d=document
-	            , a=d.styleSheets[0] || d.createStyleSheet();
-	          a.addRule(q,'f:b');
-	          for(var l=d.all,b=0,c=[],f=l.length;b<f;b++)
-	            l[b].currentStyle.f && c.push(l[b]);
-
-	          a.removeRule(0);
-	          res = c;
-	        }
-	        return res;
-	      }
-	    , addEventListener = function(evt, fn){
-	        window.addEventListener
-	          ? this.addEventListener(evt, fn, false)
-	          : (window.attachEvent)
-	            ? this.attachEvent('on' + evt, fn)
-	            : this['on' + evt] = fn;
-	      }
-	    , _has = function(obj, key) {
-	        return Object.prototype.hasOwnProperty.call(obj, key);
-	      }
-	    ;
-
-	  function loadImage (el, fn) {
-	    var img = new Image()
-	      , src = el.getAttribute('data-src');
-	    img.onload = function() {
-	      if (!! el.parent)
-	        el.parent.replaceChild(img, el)
-	      else
-	        el.src = src;
-
-	      fn? fn() : null;
-	    }
-	    img.src = src;
-	  }
-
-	  function elementInViewport(el) {
-	    var rect = el.getBoundingClientRect()
-
-	    return (
-	       rect.top    >= 0
-	    && rect.left   >= 0
-	    && rect.top <= (window.innerHeight || document.documentElement.clientHeight)
-	    )
-	  }
-
-	    var images = new Array()
-	      , query = $q('img.lazy')
-	      , processScroll = function(){
-	          for (var i = 0; i < images.length; i++) {
-	            if (elementInViewport(images[i])) {
-	              loadImage(images[i], function () {
-	                images.splice(i, i);
-	              });
-	            }
-	          };
-	        }
-	      ;
-	    // Array.prototype.slice.call is not callable under our lovely IE8 
-	    for (var i = 0; i < query.length; i++) {
-	      images.push(query[i]);
-	    };
-
-	    processScroll();
-	    addEventListener('scroll',processScroll);
-
-	  });
-	</script>
-
+<script type="text/javascript">
+// bind .load() to each image when the DOM's ready  
+$(document).ready(function() {  
+    // fade in each image individually as it's downloaded  
+    $('img').load(function() {  
+        $(this).fadeIn('slow');  
+    });  
+});  
+</script>
+  
 
  <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -107,37 +31,135 @@ $(document).ready(function () {
 <body>
 	<div class="page-wrap">
 		<header class="header">
-		
-			<div class="wrap">
-				<h1 class="site-name"><a href="index.html">Michael David McQueen</a></h1>
+		<div class="color-block"></div>
+			<h1 class="site-name"><a href="index.html">mcq</a></h1>
+			<div class="bio">
+				 <p>I am Michael David McQueen, I'm a designer and front-end developer currently working and living in Fort Collins, CO. Originally from Fife, Scotland.</p>
 			</div>
+
+			<ul class="links">
+				<li><a href="mailto:michaeldmcqueenweb@gmail.com">email me</a></li>
+				 <li><a href="https://twitter.com/michaeldmcqueen" target="_blank">twitter.com/michaeldmcqueen</a></li>
+				 <li><a href="https://last.fm/user/michaeldmcqueen" target="_blank">last.fm/user/michaeldmcqueen</a></li>
+			</ul>
+			
 		</header>
 
 		<section class="main-section">
-			<div class="wrap">
-
-			  <!--<div class="project">
-				  <img src="assets/images/blank.gif" class="lazy" data-src="https://dl.dropboxusercontent.com/u/57799018/paleo.jpg">
-				  <h2>PaleoFx</h2>
-				  <p>Many of the key features found in Sass are being adapted for submission to the W3C. <a href="http://www.xanthir.com/blog/b49w0">Variables, Mixins, and Nesting are all mooted for inclusion in CSS</a>, and we may see some of them appear in the near future.</p>
-				  <p class='note'>Work was done with <a href='http://www.variantstudios.com' target="_blank">Variant Studios</a></p>
-			  </div>-->
-
-			  <div class="project">
-
-			  	
-				  <img src="assets/images/blank.gif" class="lazy" data-src="https://dl.dropboxusercontent.com/u/267855492/michaeldmcqueen.com/sixstar-branding.jpg">
-				
-				  <div class="laptop-wrap">
-				  	 <div class="window">
-						 <img src="assets/images/blank.gif" class="lazy" data-src="https://dl.dropboxusercontent.com/u/267855492/michaeldmcqueen.com/sixstar-home.jpg">
-					</div>
-				  </div>
-				 
-				  <h2>Six Star Cars</h2>
-				  <p>Many of the key features found in Sass are being adapted for submission to the W3C. <a href="http://www.xanthir.com/blog/b49w0">Variables, Mixins, and Nesting are all mooted for inclusion in CSS</a>, and we may see some of them appear in the near future.</p>
+			  <div class="project project-1">
+			  	<div class="wrap">
+			  	<div class="project-details">
+						<div class="project-note"><p>Work completed for <a href="http://www.variantstudios.com">Variant Studios</a></div>
+					  	<h2>Six Star Cars</h2>
+						  <p>Six Star Cars is dedicated to providing the best running, best handling turn-key 818s cars on the market.</p>
+						</div>
+				<div class="project-images">
+						<img src="https://dl.dropboxusercontent.com/u/267855492/michaeldmcqueen.com/sixstar-sketch.jpg">
+						<img src="https://dl.dropboxusercontent.com/u/267855492/michaeldmcqueen.com/sixstar_colors.jpg">
+						<img src="https://dl.dropboxusercontent.com/u/267855492/michaeldmcqueen.com/sixstar-branding.jpg">
+				 </div>
 			  </div>
 
+
+				<div class="project project-4">
+					<div class="project-details">
+						<div class="wrap">
+							<div class="project-note"><p>Work completed for <a href="http://www.variantstudios.com">Variant Studios</a></div>
+						  	<h2>Hospice of Northern Colorado</h2>
+							  <p>HNC has been serving Northern Colorado families for 35+ years, I worked with the Hospice team to create a new modern look that a looks to connect with their users on a more personal level. Site is currently still in develeopment.</p>
+					</div>
+				</div>
+				<div class="project-images">
+					<div class="wrap">
+						   <img src="https://dl.dropboxusercontent.com/u/267855492/michaeldmcqueen.com/hospice-style.jpg" />
+						   <img src="https://dl.dropboxusercontent.com/u/267855492/michaeldmcqueen.com/hospice-home.jpg" />
+						   <img src="https://dl.dropboxusercontent.com/u/267855492/michaeldmcqueen.com/hospice-icons.jpg" />
+							 <img src="https://dl.dropboxusercontent.com/u/267855492/michaeldmcqueen.com/hospice-laptop.jpg" />
+					 </div>
+				 </div>
+			  </div>
+
+			  <div class="project project-5">
+					<div class="project-details">
+						<div class="wrap">
+							<div class="project-note"><p>Work completed for <a href="http://www.variantstudios.com">Variant Studios</a></div>
+						  	<h2>Fossil Creek Nursery</h2>
+							  <p>Fossil Creek is a local nursery serving Fort Collins and the Front Range with the best selection and finest quality plants. We worked on designing a site that showed off their vast selection of products, we used a Drupal faceted search system to make it easily searchable for the user. Site is currently still in development.</p>
+					</div>
+				</div>
+				<div class="project-images">
+					<div class="wrap">
+							 <img src="https://dl.dropboxusercontent.com/u/267855492/michaeldmcqueen.com/fossil-laptop.jpg" />
+							 <img src="https://dl.dropboxusercontent.com/u/267855492/michaeldmcqueen.com/fossil-home.jpg" />
+							 <img src="https://dl.dropboxusercontent.com/u/267855492/michaeldmcqueen.com/fossil-products.jpg" />
+					 </div>
+				 </div>
+			  </div>
+
+				<div class="project project-6">
+					<div class="project-details">
+						<div class="wrap">
+							<div class="project-note"><p>Work completed for <a href="http://www.variantstudios.com">Variant Studios</a></div>
+						  	<h2>Community Foundation Serving Greeley and Weld County</h2>
+							  <p>I worked with the CF team to help create a fresh new look that focused on the usability of the site and made it easily acceesible for all users and local business. Site is currently still in development.</p>
+					</div>
+				</div>
+				<div class="project-images">
+					<div class="wrap">
+					  <div class="laptop-wrap">
+					  	 <div class="window">
+							 <img src="https://dl.dropboxusercontent.com/u/267855492/michaeldmcqueen.com/cf-home.jpg" />
+							 <img src="https://dl.dropboxusercontent.com/u/267855492/michaeldmcqueen.com/cf-sub.jpg" />
+						</div>
+					  </div>
+					 </div>
+				 </div>
+			  </div>
+
+				<div class="project project-7">
+					<div class="project-details">
+						<div class="wrap">
+							<div class="project-note"><p>Work completed for <a href="http://www.variantstudios.com">Variant Studios</a></div>
+						  	<h2>Patrick's Pub</h2>
+							  <p>Patrick's is a unique Irish pub in Greeley, CO, serving the craft beer enthuis.</p>
+					</div>
+				</div>
+				<div class="project-images">
+					<div class="wrap">
+							 <img src="https://dl.dropboxusercontent.com/u/267855492/michaeldmcqueen.com/pub-home.jpg" />
+							 <img src="https://dl.dropboxusercontent.com/u/267855492/michaeldmcqueen.com/pub-beer.jpg" />
+							 <img src="https://dl.dropboxusercontent.com/u/267855492/michaeldmcqueen.com/pub-events.jpg" />
+					 </div>
+				 </div>
+			  </div>
+
+		</section>
+
+		<section class="archive">
+				<div class="wrap">
+				<h2>Other Projects</h2>
+				<p>I've had a hand in the following work, wether it be design, front-end development or site building. All work completed for <a href="http://www.variantstudios.com">Variant Studios</a>.</p>
+				<div class="archive-project">
+					  	<h6>PaleoFx</h6>
+						  <a class="read-more-btn" href="http://www.paleofx.com" target="_blank">paleofx.com</a>
+			  </div>
+
+			  <div class="archive-project">
+					  	<h6>Budweiser Event Center</h6>
+						  <a class="read-more-btn" href="http://www.budweisereventscenter.com/" target="_blank">budweisereventscenter.com</a>
+					</div>
+
+					<div class="archive-project">
+					  	<h6>Health District of Northern Larimer County</h6>
+						  <a class="read-more-btn" href="http://www.healthdistrict.org" target="_blank">healthdistrict.org</a>
+					</div>
+
+					<div class="archive-project">
+					  	<h6>Alpine Landscaping</h6>
+						  <a class="read-more-btn" href="http://www.alpinelandscaping.com" target="_blank">alpinelandscaping.com</a>
+					</div>
+
+			  </div>
 		</section>
 
 

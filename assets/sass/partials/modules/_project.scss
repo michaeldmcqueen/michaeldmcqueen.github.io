@@ -7,15 +7,17 @@
     @include breakpoint($phone) {
 	   margin-bottom: 5em;
     }
-    @include breakpoint($tablet) {
-	   margin-bottom: 15em;
-    }
 	img {
-	margin-bottom: 6em;
+		 @include breakpoint($phone) {
+			 padding: 1em 1em 2em;
+		 }
+		 @include breakpoint($tablet) {
+			margin-bottom: 6em;
+		 }
 	}
 }
 
-
+/*
 @include breakpoint($desktop) {
 	.laptop-wrap {
 	  width:980px;
@@ -47,4 +49,72 @@
 		    left:156px;
 		}
 	}
+}*/
+
+
+.project-1, .project-2, .project-3, .project-4, .project-5, .project-6  {
+	.project-details {
+		@include breakpoint($phone) {
+			padding: 1em 0.5em;
+		}
+		@include breakpoint($tablet) {
+			padding: 7em 0em 2em;
+			
+		}
+	}
 }
+.project-1 {
+	.project-details {
+	}
+	.project-note {
+		border-color: $project-one;
+		a {
+			color: $project-one;
+		}
+	}
+}
+
+.project-2 {
+	.project-note {
+		border-color: $project-two;
+		a {
+			color: $project-two;
+		}
+	}
+}
+
+.project-4 {
+	.project-note {
+		border-color: $project-four;
+		a {
+			color: $project-four;
+		}
+	}
+}
+
+.project-5 {
+	.project-note {
+		border-color: $project-five;
+		a {
+			color: $project-five;
+		}
+	}
+}
+
+.project-6 {
+	.project-note {
+		border-color: $project-six;
+		a {
+			color: $project-six;
+		}
+	}
+}
+
+.light {
+  * {
+    color: #fff !important;
+    }
+  }
+
+
+
