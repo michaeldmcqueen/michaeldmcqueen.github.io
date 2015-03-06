@@ -18,7 +18,7 @@
 }
 
 
-.project-1, .project-2, .project-3, .project-4, .project-5, .project-6  {
+.project {
 	.project-details {
 		@include breakpoint($phone) {
 			padding: 1em 0.5em;
@@ -76,11 +76,45 @@
 	}
 }
 
+.project-8 {
+	.project-note {
+		border-color: #7dbf44;
+		a {
+			color: #7dbf44;
+		}
+	}
+}
+
+.project-10 {
+	.project-note {
+		border-color: #3F548D;
+		a {
+			color: #3F548D;
+		}
+	}
+}
+
+
+
 .light {
   * {
     color: #fff !important;
     }
   }
 
+.project-note {
+	p {
+		@include breakpoint($tablet) {
+			float: left;
+		}
+	}
+	span {
+    font-size: 150%;
+    @include breakpoint($tablet) {
+			float: right;
+	    padding-top: 1.2em;
+    }
+	}
+}
 
 
